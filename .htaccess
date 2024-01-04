@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^portifolio/$ index.html [NC,L]

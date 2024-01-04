@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado Gerim</title>
+    <style>
+        /* Estilos permanecem inalterados */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1f1f1f;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #121212;
+            padding: 2rem 0;
+        }
+
+        header img {
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        header h1,
+        header p {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            cursor: pointer;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        h2,
+        h3 {
+            color: #fff;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="assets/imagem/gerim_logos-removebg-preview.png" alt="Sua Foto" width="100" height="100">
+        <h1>Supermercado Gerim</h1>
+        <p>Compras Online Locais</p>
+        <a style="text-decoration: none;" target="_blank" rel="noreferrer noopener" href="http://gerim.lovestoblog.com/">Testar Projeto</a>
+        <nav>
+            <a href="#about">Sobre</a>
+            <a href="#features">Recursos</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Sobre</h2>
+        <p>O Supermercado Gerim é a sua solução conveniente para compras online de supermercado. Faça suas compras com
+            facilidade e comodidade, tudo a partir do conforto da sua casa.</p>
+    </section>
+
+    <section id="features">
+        <h2>Recursos</h2>
+        <h3>Recursos para o Cliente:</h3>
+        <ul>
+            <li>Opção de login para os usuários criarem e acessarem suas contas pessoais.</li>
+            <li>Página de perfil, proporcionando aos usuários a capacidade de alterar informações pessoais.</li>
+            <li>Adição e gerenciamento de endereços para entrega.</li>
+            <li>Área de contato para comunicação direta.</li>
+        </ul>
+        </li>
+        <li>Histórico de Compras:
+            <ul>
+                <li>Visualização detalhada das compras anteriores.</li>
+                <li>Registro de produtos adquiridos em cada transação.</li>
+            </ul>
+        </li>
+        <li>Sistema de Carrinho Eficiente:
+            <ul>
+                <li>Implementação de um carrinho de compras com validação automática.</li>
+                <li>Itens no carrinho por mais de 12 horas são removidos, e as quantidades são restituídas ao estoque.
+                </li>
+                <li>Script interno que executa essa ação a cada intervalo de 12 horas.<h4>e muito mais...</h4>
+                </li>
+            </ul>
+        </li>
+        </ul>
+
+        <h3>Recursos Administrativos:</h3>
+        <ul>
+            <li>Recursos Administrativos:
+                <ul>
+                    <li>Controle de Usuários:
+                        <ul>
+                            <li>Níveis de usuário para administração eficiente.</li>
+                            <li>Adição de colaboradores e atribuição de privilégios específicos.</li>
+                        </ul>
+                    </li>
+                    <li>Gestão de Clientes:
+                        <ul>
+                            <li>Edição ou adição de informações de clientes.</li>
+                            <li>Pesquisa de clientes e opção para excluir registros.</li>
+                        </ul>
+                    </li>
+                    <li>Controle de Produtos:
+                        <ul>
+                            <li>Adição, exclusão ou edição de produtos no catálogo.</li>
+                            <li>Destaque de produtos em promoção, destacando-os no topo da página.</li>
+                        </ul>
+                    </li>
+                    <li>Gestão de Comunicações:
+                        <ul>
+                            <li>Visualização de mensagens enviadas por clientes através da plataforma.</li>
+                            <li>Preparação e acompanhamento de compras para envio.</li>
+                        </ul>
+                    </li>
+                    <li>Notas Fiscais e Envio:
+                        <ul>
+                            <li>Opção para marcar produtos como prontos para envio.</li>
+                            <li>Geração e impressão de notas fiscais para pedidos prontos.</li>
+                        </ul>
+                    </li>
+                    <li>Banners Personalizáveis:
+                        <ul>
+                            <li>Adição ou alteração de banners promocionais conforme necessário.</li>
+                        </ul>
+                    </li>
+                    <li>Integração com API Externa:
+                        <ul>
+                            <li>Página de receitas alimentada por uma API externa, oferecendo uma variedade de receitas.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>sistemas de segurança:</h3>
+        <li> Login de Usuarios:
+            <ul>
+                <li>O código é desenvolvido seguindo boas práticas de segurança recomendadas no próprio documento
+                    PHP/MySQL.</li>
+
+                <li>Todas as senhas e tokens são armazenados de forma criptografada, garantindo uma camada adicional de
+                    segurança.</li>
+
+                <li>O código implementa verificações de token de sessão para garantir acesso seguro e autorizado,
+                    redirecionando para a página de login em caso de ausência ou invalidade do token.</li>
+
+                <li>A função `cpfexist` valida a existência de um CPF durante o registro, prevenindo registros
+                    duplicados no sistema.</li>
+
+                <li>No processo de registro (`registroUser`), as senhas são armazenadas de forma segura usando hash,
+                    proporcionando uma camada adicional de segurança.</li>
+
+                <li>O código demonstra práticas seguras, como o uso de consultas preparadas e filtragem de entrada para
+                    prevenir ataques potenciais.</li>
+
+                <li>Cada login é validado por meio da comparação do token, sendo este atualizado a cada novo login para
+                    fortalecer a segurança do sistema.</li>
+
+                <li>O processo de login é baseado em um CPF único, permitindo apenas uma conta associada a cada CPF.
+                    Isso assegura a singularidade das contas e reforça a integridade do sistema.</li>
+            </ul>
+
+        </li>
+
+        <li>Compras:
+            <ul>
+                <li>O sistema de compras é concebido com uma lógica simples, porém robusta, visando evitar erros e
+                    acessos indevidos.</li>
+
+                <li>Apenas usuários autenticados têm permissão para realizar compras. Caso um usuário não esteja logado
+                    e deseje efetuar uma compra, automaticamente será redirecionado para a página de registro/login.
+                </li>
+
+                <li>Após a conclusão da compra, o usuário tem acesso exclusivo aos seus próprios pedidos, rastreados por
+                    meio de identificadores únicos associados a cada usuário.</li>
+
+                <li>Um usuário pode realizar compras quantas vezes desejar até que um funcionário defina o pedido atual
+                    como "PEDIDO PREPARADO". Após essa etapa, as compras subsequentes serão tratadas separadamente.</li>
+
+                <li>No painel de administração (ADMIN), as compras dos usuários são organizadas em blocos, cada um
+                    contendo informações como endereço, detalhes do usuário e o pedido correspondente. Esses blocos são
+                    ordenados por data de chegada.</li>
+
+                <li>Após a confirmação do ADMIN como "PEDIDO PREPARADO", é atribuído um ID hash ao pedido, usado para
+                    identificar a compra atual, juntamente com o ID único do usuário. Isso garante que pedidos futuros
+                    do mesmo usuário sejam distintos e não se misturem.</li>
+
+                <li>Todas as operações realizadas para cada usuário incluem códigos de rastreamento de ID, garantindo a
+                    devida separação e segurança das operações relacionadas a cada usuário.</li>
+
+                <li>Para evitar que itens fiquem presos no estoque quando os usuários colocam produtos no carrinho, mas
+                    esquecem de finalizar a compra, o sistema executa um script. Esse script verifica itens no carrinho
+                    que permaneceram por mais de 12 horas e os retorna ao estoque, garantindo a disponibilidade adequada
+                    dos produtos.</li>
+            </ul>
+        </li>
+        <li>Segurança Administrativa:
+            <ul>
+                <li>Apenas o ADMIN possui permissões para adicionar, editar e excluir informações do sistema, assegurando um controle restrito sobre operações sensíveis.</li>
+
+                <li>Cada operação que envolve informações delicadas é cuidadosamente verificada e autenticada, garantindo que apenas contas autorizadas possam realizar alterações ou acessar informações pessoais.</li>
+                
+                <li>Dentre várias verificações implementadas, destaca-se uma específica responsável por assegurar que exista apenas um administrador. Caso uma tentativa seja feita para criar um novo administrador, o sistema o deleta imediatamente, preservando a singularidade da função administrativa, verificando tanto o nível quanto o ID correspondente.</li>
+                
+                <li>O ADMIN não tem permissão para se excluir, sendo implementada uma verificação específica para evitar essa operação. Em caso de tentativa, o sistema exibe uma tela de erro, impedindo a exclusão do próprio administrador.</li>
+                
+            </ul>
+        </li>
+        <h2>Estas representam algumas das robustas implementações de segurança incorporadas ao código, visando salvaguardar a integridade e segurança dos dados dos nossos clientes.</h2>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Estamos aqui para ajudar! Entre em contato conosco para quaisquer dúvidas ou assistência.</p>
+        <ul>
+            <li>github projeto: <a href="https://github.com/4dao/projetosupermercado">acessar</a></li>
+        </ul>
+    </section>
+
+    <section id="project-images">
+        <h2>Imagens do Projeto</h2>
+        <div class="gallery">
+            <img src="assets/imagem/Captura de tela 2023-12-18 141250.png" alt="Imagem do Projeto">
+            <img src="assets/imagem/Captura de tela 2023-12-18 145625.png" alt="Imagem do Projeto">
+            <img src="assets/imagem/Captura de tela 2023-12-18 144140.png" alt="Imagem do Projeto">
+            <img src="assets/imagem/Captura de tela 2023-12-18 150846.png" alt="Imagem do Projeto">
+
+
+            <!-- Adicione mais imagens conforme necessário -->
+        </div>
+    </section>
+</body>
+
+</html>

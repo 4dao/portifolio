@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seu Nome - Desenvolvedor PHP</title>
+  <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+  <header>
+    <img src="assets/imagem/photo1702919416.jpeg" alt="Sua Foto" width="100" height="100">
+    <h1>Diego Lopes</h1>
+    <p>Desenvolvedor back-end</p>
+    <nav>
+      <a href="#about">Sobre Mim</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#projects">Projetos</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Sobre Mim</h2>
+    <p>Olá! Eu sou Diego, um entusiasta da programação de 19 anos que encontrou paixão e propósito na criação de
+      soluções web. Nos últimos 1 ano e meio, tenho dedicado meu tempo ao estudo e aprimoramento das minhas habilidades
+      em programação, focando especialmente em tecnologias como HTML, CSS, PHP e MySQL.</p>
+    <h3>Conhecimento Técnico:</h3>
+    <p>No mundo do PHP, tenho experiência sólida em Programação Orientada a Objetos (POO) e em trabalhar com bancos de
+      dados utilizando DAO (Data Access Object).
+      Meu domínio em HTML e CSS me permite criar interfaces intuitivas e atraentes, enquanto minhas habilidades em PHP e
+      MySQL dão vida a funcionalidades dinâmicas e eficientes.</p>
+    <h3>Experiência Profissional:</h3>
+    <p>Ao longo desse período, tive a oportunidade de aplicar meus conhecimentos em projetos freelancers de PHP. Essas
+      experiências me proporcionaram uma visão prática do desenvolvimento web, ensinando-me a importância da comunicação
+      eficaz e da entrega de resultados de qualidade.</p>
+    <h3>Objetivo Profissional:</h3>
+    <p>Atualmente, busco uma oportunidade desafiadora em uma empresa sólida no mercado. Minha motivação está em
+      contribuir para projetos inovadores, aprender com profissionais experientes e evoluir constantemente minhas
+      habilidades. Estou entusiasmado em fazer a transição para o ambiente corporativo para aplicar meu conhecimento
+      técnico e contribuir para o sucesso de uma equipe.</p>
+    <h3></h3>
+  </section>
+
+  <section id="skills">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>PHP</li>
+      <li>MySQL</li>
+      <li>AJAX</li>
+      <li>Programação Orientada a Objetos (POO)</li>
+      <li>Padrão DAO</li>
+      <li>Git/Controle de Versão de Código</li>
+
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projetos Recentes</h2>
+    <div class="projects">
+      <a href="projeto-1.html" style="text-decoration: none;">
+        <div class="project">
+          <img src="assets/imagem/Captura de tela 2023-12-19 102120.png" alt="Projeto 1">
+          <div class="overlay">
+            <h3>SuperMercado Gerim</h3>
+            <p>Site de compra local Completo para um supermercado. feito em HTML, CSS, JavaScript(e AJAX), PHP,
+              MySQL....</p>
+            <a href="projeto-1.html">Ver detalhes</a>
+          </div>
+        </div>
+      </a>
+      <div class="project">
+        <img src="imagem2.jpg" alt="Projeto 2">
+        <div class="overlay">
+          <h3>Projeto 2</h3>
+          <p>EM BREVE...</p>
+          <a href="#">Ver detalhes</a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="imagem3.jpg" alt="Projeto 3">
+        <div class="overlay">
+          <h3>Projeto 3</h3>
+          <p>EM BREVE...</p>
+          <a href="#">Ver detalhes</a>
+        </div>
+      </div>
+      <!-- Adicione mais projetos conforme necessário -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contato</h2>
+    <p>Estou aberto a oportunidades e colaborações. Entre em contato comigo:</p>
+    <ul>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/diego-lopes-101964252/" target="_blank">LinkedIn</a></li>
+      <li>GitHub: <a href="https://github.com/4dao" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+
+  <script>
+    // Adicionando rolagem suave para os links de navegação
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
